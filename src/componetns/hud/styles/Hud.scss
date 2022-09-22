@@ -1,0 +1,159 @@
+.cef-hud{
+  color: #fbfbfb;
+  &-main{
+    position: absolute;
+    display: grid;
+    justify-items: right;
+    right: 0;
+    margin-top: 24px;
+    padding: 0 24px;
+    &-top{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 12px;
+
+      &-vertical_line{
+        width: 2px;
+        height: 16px;
+        background: #fbfbfb;
+        opacity: .25;
+      }
+
+      &-wanted{
+        display: flex;
+        gap: 2px;
+
+        &_star{
+          width: 16px;
+          height: 16px;
+          background: url('../assets/icons/Hud/wanted_star_on.svg');
+          background-size: 100%;
+
+          &_off{
+            width: 16px;
+            height: 16px;
+            background: url('../assets/icons/Hud/wanted_star.svg');
+            background-size: 100%;
+            opacity: .2;
+          }
+        }
+      }
+
+      &-online{
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        &_img{
+          width: 14px;
+          height: 14px;
+          background: url('../assets/icons/Hud/online_user.svg');
+          background-size: 100%;
+        }
+
+        &_text{
+          font-size: 16px;
+        }
+      }
+      &-logo{
+        width: 96px;
+        height: 16px;
+        background: url('../assets/icons/Hud/favicon1.svg') no-repeat;
+        background-size: 100%;
+      }
+    }
+    &-money{
+      margin-top: 24px;
+      display: grid;
+      justify-content: right;
+      gap: 4px;
+
+      &-cash{
+        gap: 12px;
+        display: flex;
+        justify-content: right;
+        &_text{
+          font-weight: 400;
+        }
+        &_img{
+          width: 16px;
+          min-height: 16px;
+          background: url('../assets/icons/Hud/attach_money.svg') no-repeat;
+          background-size: contain;
+        }
+      }
+      &-bank{
+        display: flex;
+        justify-content: right;
+        gap: 12px;
+        &_img{
+          width: 16px;
+          height: 16px;
+          background: url('../assets/icons/Hud/account_balance.svg');
+          background-size: 100%;
+        }
+      }
+    }
+    &-quest{
+      display: grid;
+      padding: 12px 24px;
+      margin-top: 24px;
+      background: rgba(251,251,251,.1);
+      border-radius: 4px;
+      row-gap: 12px;
+      &-list{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        &-text{
+          &_name{
+            font-size: 16px;
+          }
+          &_terms{
+            margin-top: 4px;
+            font-size: 14px;
+          }
+          &_marg{
+            height: 12px;
+          }
+        }
+      }
+      &_img{
+        height: 24px;
+        width: 24px;
+        background: url('../assets/icons/Hud/quest_icon.svg') no-repeat;
+        background-size: cover;
+
+        &-on{
+          height: 24px;
+          width: 24px;
+          background: url('../assets/icons/Hud/quest_icon_active.svg');
+          background-size: cover;
+        }
+      }
+    }
+  }
+  &-second{
+    position: absolute;
+    bottom: 0;
+    margin-left: 300px;
+    margin-bottom: 128px;
+    &_gzone{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      &_icons{
+        width: 24px;
+        height: 24px;
+        background: url('../assets/icons/Hud/shield.svg') no-repeat;
+        background-size: contain;
+        opacity: .75;
+      }
+      &_text{
+        font-size: 18px;
+        font-weight: 500;
+      }
+    }
+  }
+}
