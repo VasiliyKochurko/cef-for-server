@@ -19,6 +19,7 @@
 ## Сервер -> Клиент
 
 ### HUD
+![Image alt](https://cdn.discordapp.com/attachments/1002966634996183160/1022591273670021151/hud.png)
 
 #### Отобразить
 ```c#
