@@ -27,7 +27,7 @@ EventManager.callHandler('hud', 'show', {show: true})
 
 #### Сокрыть
 ```c#
-EventManager.callHandler('hud', 'show', {show: true})
+EventManager.callHandler('hud', 'show', {show: false})
 ```
 
 #### Обновить значения
