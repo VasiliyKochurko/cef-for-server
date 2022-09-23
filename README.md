@@ -14,7 +14,7 @@
 
 Для того чтобы сбилдить проект.
 
-![Image alt]([https://cdn.discordapp.com/attachments/1002966634996183160/1022591273670021151/hud.png](https://www.figma.com/file/RTGoCdhfmXPN98tEsZpiLp/Rage-MP?node-id=53%3A195))
+![Image alt](https://www.figma.com/file/RTGoCdhfmXPN98tEsZpiLp/Rage-MP?node-id=53%3A195)
 # Ивенты
 
 ## Сервер -> Клиент
