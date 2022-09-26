@@ -6,13 +6,15 @@ import Shop from './pages/Shop';
 import ShopStore from './store/ShopStore';
 import PlayerStore from './store/PlayerStore';
 import Hud from "./componetns/hud";
+import MainAuthorization from "./componetns/authorization/MainAuthorization";
 
 
 const App = () => {
 
     return (
         <div className="cef">
-            <Hud/>
+            {/*<Hud/>*/}
+            <MainAuthorization/>
         </div>
     );
 }
