@@ -14,8 +14,10 @@ import './styles/Recovery.scss'
 
 const MainAuthorization = () => {
     const[page, setPage] = useState('authorization'),
-        [rememberAccount, setRememberAccount] = useState({login: '', password: ''});
+        [rememberAccount, setRememberAccount] = useState({login: '', password: ''}),
+        [show, setShow] = useState(true);
 
+    if(!show) return null;
     return (
         <div className="auth-main">
             {page === 'authorization' && <Authorization setPageGlobal={setPage} rememberAccount={rememberAccount}/>}
