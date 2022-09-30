@@ -40,29 +40,29 @@ const Authorization:React.FC<{setPageGlobal: any, rememberAccount: any}> = ({set
             </div>
             <div className="authorization-inputs">
                 <div className="authorization-inputs-login">
-                    <div className="authorization-inputs-login_icon"></div>
+                    <div className="authorization-inputs-login_label">Логин</div>
                     <input value={inputData.login} onChange={(e) => dataInput(e, 'login')}
                            type="text"
                            placeholder="Введите логин"
                            className="authorization-inputs-login_inp"/>
                 </div>
                 <div className="authorization-inputs-password">
-                    <div className="authorization-inputs-password_icon"></div>
+                    <div className="authorization-inputs-password_label">Пароль</div>
                     <input value={inputData.password} onChange={(e) => dataInput(e, 'password')}
                            type="password"
                            placeholder="Введите пароль"
                            className="authorization-inputs-password_inp"/>
                 </div>
             </div>
-            <div className="authorization-buttons">
-                <div className="authorization-buttons_auth" onClick={() => acceptButton()}>Войти</div>
-            </div>
             <div className='authorization-save'>
                 <div className="authorization-save_checkbox" onClick={() => setRememberData(!rememberData)}>
-                    <div className={!rememberData ? 'authorization-save_checkbox_on':'authorization-save_checkbox_off'}></div>
+                    <div className={rememberData ? 'authorization-save_checkbox_on':'authorization-save_checkbox_off'}></div>
 
                 </div>
                 <span>Запомнить меня</span>
+            </div>
+            <div className="authorization-buttons"onClick={() => acceptButton()}>
+                <div className="authorization-buttons_auth">Войти</div>
             </div>
             <div className="authorization-help">
                 <div className="authorization-help-recovery">Забыли пароль? <div className="authorization-help-recovery_link" onClick={() => setPageGlobal('recovery')}>Восстановить</div></div>

@@ -23,7 +23,7 @@ const Registration:React.FC<{setPageGlobal: any}> = ({setPageGlobal}) => {
     },[inputData]);
 
     const acceptButton = React.useCallback(() => {
-        if ((inputData.login === '' ||  inputData.password === '' || inputData.email === '') || inputData.password !== inputData.acceptPassword) alert("Заполните поля")
+        if ((inputData.login === '' ||  inputData.password === '' || inputData.email === '')) alert("Заполните поля")
         else {
             let data = {login: inputData.login,email: inputData.email, password: inputData.login}
             EventManager.trigger('authorization', 'registration', data); // eslint-disable-line
@@ -41,32 +41,25 @@ const Registration:React.FC<{setPageGlobal: any}> = ({setPageGlobal}) => {
             </div>
             <div className="registration-inputs">
                 <div className="registration-inputs-login">
-                    <div className="registration-inputs-login_icon"></div>
+                    <div className="registration-inputs-login_label">Логин</div>
                     <input value={inputData.login} onChange={(e) => dataInput(e, 'login')}
                            type="text"
                            placeholder="Введите логин"
                            className="registration-inputs-login_inp"/>
                 </div>
                 <div className="registration-inputs-email">
-                    <div className="registration-inputs-email_icon"></div>
+                    <div className="registration-inputs-email_label">Почта</div>
                     <input value={inputData.email} onChange={(e) => dataInput(e, 'email')}
                            type="email"
                            placeholder="Введите почту"
                            className="registration-inputs-email_inp"/>
                 </div>
                 <div className="registration-inputs-password">
-                    <div className="registration-inputs-password_icon"></div>
+                    <div className="registration-inputs-password_label">Пароль</div>
                     <input value={inputData.password} onChange={(e) => dataInput(e, 'password')}
                            type="password"
                            placeholder="Введите пароль"
                            className="registration-inputs-password_inp"/>
-                </div>
-                <div className="registration-inputs-accept-password">
-                    <div className="registration-inputs-accept-password_icon"></div>
-                    <input value={inputData.acceptPassword} onChange={(e) => dataInput(e, 'acceptPassword')}
-                           type="password"
-                           placeholder="Повторите пароль"
-                           className="registration-inputs-accept-password_inp"/>
                 </div>
             </div>
             <div className="registration-buttons">

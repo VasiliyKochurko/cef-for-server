@@ -1,37 +1,42 @@
 .recovery{
-  margin-top: 24px;
+  padding: 48px 0;
+  position: absolute;
+  width: 50%;
+  right: 0;
+  height: 100%;
 
   &-header{
     display: grid;
     justify-content: center;
+    gap: 24px;
     &_logo{
       margin: auto;
       background: url('../assets/img/logo.svg')
       center no-repeat;
 
-      width: 280px;
-      height: 192px;
+      width: 186px;
+      height: 128px;
 
       background-size: cover;
     }
     &_title{
-      margin-top: 24px;
-      color: #fbfbfb;
-
       font-weight: 700;
       font-size: 36px;
       line-height: 44px;
       /* identical to box height, or 122% */
 
       text-align: center;
-    }
 
+      color: #FFFFFF;
+
+    }
     &_text{
       width: 512px;
-      margin-top:12px ;
       font-weight: 400;
-      font-size: 24px;
+      font-size: 22px;
       line-height: 28px;
+      /* identical to box height, or 127% */
+
       text-align: center;
 
       color: #FFFFFF;
@@ -47,29 +52,37 @@
     margin-top: 96px;
     display: grid;
     justify-content: center;
-    gap: 24px;
+    gap: 48px;
     &-text{
+      position: relative;
       display: flex;
       align-items: center;
-      width: 512px;
+      width: 448px;
       height: 60px;
-      padding: 12px 24px 12px 24px;
+      padding: 12px 24px;
       background: rgba(251,251,251, .1);
 
-      border-radius: 4px;
-
       &_icon{
-        width: 36px;
-        height: 36px;
+        position: absolute;
+        top: -25%;
+        padding: 2px 12px;
+        background: #FFCA28;
 
-        background: url('../assets/icons/email.svg')
-        no-repeat;
-        background-size: cover;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height, or 150% */
+
+        text-align: center;
+        letter-spacing: 0.1px;
+
+        /* Primary/Primary 900 */
+
+        color: #272727;
       }
 
       &_inp{
 
-        margin-left: 12px;
         width: 100%;
         background: none;
         border: none;
@@ -92,17 +105,19 @@
     &_auth{
       margin-top: 48px;
 
-      padding: 24px 151px;
-      width: 511px;
+      padding: 12px 96px;
       text-align: center;
       background: #FFCA28;
 
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 36px;
-      color: #FBFBFB;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 28px;
+      /* identical to box height, or 127% */
 
-      border-radius: 4px;
+      text-align: center;
+
+      color: #000000;
+
 
       transition: opacity .15s linear;
 
@@ -112,16 +127,17 @@
     }
   }
   &-help{
+    padding: 0 24px;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 24px;
+    bottom: 48px;
     display: grid;
-    width: 1000px;
     gap: 24px;
     justify-content: center;
     text-align: center;
     margin: auto;
+    max-width: 740px;
 
     &-recovery{
       font-weight: 400;
