@@ -40,11 +40,3 @@ EventManager.callHandler('hud', 'show', {show: false})
 ```c#
 EventManager.callHandler('hud', 'updateValue', {cash: 'yourValue', bank: 'yourValue', micro: boolean, wantedLevel: 0, online: 325, playerId: 2336, greenZone: 35})
 ```
-
-## Клиент-> Сервер 
-
-### Закрыть интерфейс
-``('shop', 'close')``
-
-### Покупка товаров
-``('shop', 'buyItems', obj)``
